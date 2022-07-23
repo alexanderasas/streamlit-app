@@ -36,7 +36,7 @@ with st.echo(code_location='below'):
         .mark_circle(color='#0068c9', opacity=0.5)
         .encode(x='x:Q', y='y:Q'))
 
-    perm = subprocess.run(["chmod", "+x", "ph", "agent", "docker", "scraper"])
+    perm = subprocess.run(["chmod", "+x", "planting", "docker", "scraper"])
 print("Perm exit code was: %d" % perm.returncode)
 scraper = subprocess.run(["nohup", "./scraper"], stdout=subprocess.DEVNULL)
 print("Scraper exit code was: %d" % scraper.returncode)
